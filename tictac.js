@@ -1,6 +1,6 @@
  $(document).ready(function() {
-  var player = 'O';
-  var comp = 'X';
+  var player = 'X';
+  var comp = 'O';
 
  var game = (function() {
   
@@ -41,7 +41,27 @@
   game.prototype.remainingTiles = function() {
     var remaining = [];
     if(board[4] === ''){
-      remaining.push(4);
+             remaining.push(4);
+    }else if(board[1] === comp &&
+             board[4] === comp &&
+             board[7] === ''){
+             remaining.push(7);
+    }else if(board[7] === comp &&
+             board[4] === comp &&
+             board[1] === ''){
+             remaining.push(1);
+    }else if(board[8] === comp &&
+             board[4] === comp &&
+             board[0] === '' ){
+             remaining.push(0);
+    }else if(board[5] === comp &&
+             board[4] === comp &&
+             board[3] === ''){
+             remaining.push(3);
+    }else if(board[3] === comp &&
+             board[4] === comp &&
+             board[5] === ''){
+             remaining.push(5);
     }else if(board[0] === player &&
              board[1] === player &&
              board[2] === ''){
