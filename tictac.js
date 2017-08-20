@@ -42,6 +42,14 @@
     var remaining = [];
     if(board[4] === ''){
              remaining.push(4);
+    }else if(board[0] === comp &&
+             board[6] === comp &&
+             board[3] === ''){
+             remaining.push(3);
+    }else if(board[2] === comp &&
+             board[8] === comp &&
+             board[5] === ''){
+             remaining.push(5);
     }else if(board[1] === comp &&
              board[4] === comp &&
              board[7] === ''){
@@ -193,10 +201,6 @@
       if (gameboard.remainingTiles().length === 0) {
         flash($('.tile'));
       }
-    });
-
-    $('#reset').click(function() {
-      reset();
     });
 
   function placePlayer(tile) {
