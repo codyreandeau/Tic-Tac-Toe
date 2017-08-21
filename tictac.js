@@ -42,14 +42,38 @@
     var remaining = [];
     if(board[4] === ''){
              remaining.push(4);
+    }else if(board[2] === comp &&
+             board[1] === comp &&
+             board[0] === ''){
+             remaining.push(0);
     }else if(board[0] === comp &&
-             board[6] === comp &&
-             board[3] === ''){
-             remaining.push(3);
+             board[2] === comp &&
+             board[1] === ''){
+             remaining.push(1);
+    }else if(board[0] === comp &&
+             board[1] === comp &&
+             board[2] === ''){
+             remaining.push(2);
+    }else if(board[0] === comp &&
+             board[3] === comp &&
+             board[6] === ''){
+             remaining.push(6);
+    }else if(board[6] === comp &&
+             board[3] === comp &&
+             board[0] === ''){
+             remaining.push(0);
+    }else if(board[8] === comp &&
+             board[5] === comp &&
+             board[2] === ''){
+             remaining.push(2);
     }else if(board[2] === comp &&
              board[8] === comp &&
              board[5] === ''){
              remaining.push(5);
+    }else if(board[0] === comp &&
+             board[6] === comp &&
+             board[3] === ''){
+             remaining.push(3);
     }else if(board[1] === comp &&
              board[4] === comp &&
              board[7] === ''){
@@ -62,6 +86,10 @@
              board[4] === comp &&
              board[0] === '' ){
              remaining.push(0);
+    }else if(board[0] === comp &&
+             board[4] === comp &&
+             board[8] === '' ){
+             remaining.push(8);
     }else if(board[5] === comp &&
              board[4] === comp &&
              board[3] === ''){
@@ -70,6 +98,14 @@
              board[4] === comp &&
              board[5] === ''){
              remaining.push(5);
+    }else if(board[8] === comp &&
+             board[7] === comp &&
+             board[6] === ''){
+             remaining.push(6);
+    }else if(board[6] === comp &&
+             board[7] === comp &&
+             board[8] === ''){
+             remaining.push(8);
     }else if(board[0] === player &&
              board[1] === player &&
              board[2] === ''){
