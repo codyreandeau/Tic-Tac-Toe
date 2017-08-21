@@ -221,6 +221,10 @@
       var winner = checkForWin(player);
       if (winner) {
         flash(getTiles(winner));
+          var wins = document.getElementById('wins');
+          var number = wins.innerHTML;
+          number++;
+          wins.innerHTML = number;
         return;
       }
 
@@ -231,11 +235,19 @@
      var winner = checkForWin(comp);
       if (winner) {
         flash(getTiles(winner));
+          var loss = document.getElementById('losses');
+          var number = loss.innerHTML;
+          number++;
+          loss.innerHTML = number;
         return;
       }
 
       if (gameboard.remainingTiles().length === 0) {
         flash($('.tile'));
+          var draw = document.getElementById('draws');
+          var number = draw.innerHTML;
+          number++;
+          draw.innerHTML = number;
       }
     });
 
@@ -307,6 +319,14 @@ $('#O').on('click', function(){
   comp = 'X';
   reset();
 });
+
+// Hello Hi What's up?
+/*$('#O').on('click', function() {
+    var wins = document.getElementById('wins');
+    var number = wins.innerHTML;
+    number++;
+    wins.innerHTML = number;
+});*/
   
  function nextMove() {
    return $('#' + _.sample(gameboard.remainingTiles()));

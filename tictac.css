@@ -5,7 +5,7 @@
 }
 
 html {
-  background-image: url(https://subtlepatterns.com/patterns/swirl.png);  
+background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png');
 }
 
 button {
@@ -68,15 +68,26 @@ button {
 }
 
 #results {
-  margin: 50px 0px -20px 150px;
+  margin: -190px -500px 0px 150px;
+  float: right
 }
 
 #results p {
-  display: inline;
   margin-left: 20px;
   font-weight: bold;
-  font-size: 20px;
-  
+  font-size: 18px;  
+}
+
+#wins {
+  color: green;
+}
+
+#losses {
+  color: red;
+}
+
+#draws {
+  color: blue;
 }
 
 button:hover {
@@ -92,6 +103,3 @@ button:focus {
   opacity:0.9;
   cursor: pointer;
 }
-
-
-
