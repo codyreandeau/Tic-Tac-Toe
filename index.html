@@ -1,32 +1,43 @@
-<div id="container">
-  <div id="outer_container">
-  <div id="inner_container">
-    <table>
-      <tr>
-        <td id="0" class="tile"></td>
-        <td id="1" class="tile"></td>
-        <td id="2" class="tile"></td>
-      </tr>
-      <tr>
-        <td id="3" class="tile"></td>
-        <td id="4" class="tile"></td>
-        <td id="5" class="tile"></td>
-      </tr>
-      <tr>
-        <td id="6" class="tile"></td>
-        <td id="7" class="tile"></td>
-        <td id="8" class="tile"></td>
-      </tr>
-    </table>
-  </div>
-</div>
-  <div id="buttons">
-    <button id='X'>X</button>
-    <button id='O'>O</button>
-  </div>
-</div>
-<div id='results'>
-  <p>Wins: <span id="wins">0</span></p>
-  <p>Losses: <span id="losses">0</span></p>
-  <p>Draws: <span id="draws">0</span></p>
-</div>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="tictac.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+	<script type="text/javascript" src="tictac.js"></script>
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<div id="container">
+	  <div id="outer_container">
+	  <div id="inner_container">
+		<table>
+		  <tr>
+			<td id="0" class="tile"></td>
+			<td id="1" class="tile"></td>
+			<td id="2" class="tile"></td>
+		  </tr>
+		  <tr>
+			<td id="3" class="tile"></td>
+			<td id="4" class="tile"></td>
+			<td id="5" class="tile"></td>
+		  </tr>
+		  <tr>
+			<td id="6" class="tile"></td>
+			<td id="7" class="tile"></td>
+			<td id="8" class="tile"></td>
+		  </tr>
+		</table>
+	  </div>
+	</div>
+	  <div id="buttons">
+		<button id='X'>X</button>
+		<button id='O'>O</button>
+	  </div>
+	</div>
+	<div id='results'>
+	  <p>Wins: <span id="wins">0</span></p>
+	  <p>Losses: <span id="losses">0</span></p>
+	  <p>Draws: <span id="draws">0</span></p>
+	</div>
+</body>
+</html>
